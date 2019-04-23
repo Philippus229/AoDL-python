@@ -28,4 +28,4 @@ Newtonsoft.Json [newtonsoft.com](https://www.newtonsoft.com/json)
 
 # LICENSE / LIZENS
 This project is released under the GNU gpl v3 license
-[EN][https://www.gnu.org/licenses/gpl-3.0.en.html]/[DE][https://www.gnu.org/licenses/gpl-3.0.de.html]. 
+[EN](https://www.gnu.org/licenses/gpl-3.0.en.html)/[DE](https://www.gnu.org/licenses/gpl-3.0.de.html). 
