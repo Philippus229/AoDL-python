@@ -18,8 +18,7 @@ AOD-Downloader ist ein Downloader für die Website [anime-on-demand.de](https://
 * Schneller Download
 
 # Dependencies
-FFmpeg [ffmpeg.org](https://ffmpeg.org/)
-Newtonsoft.Json [newtonsoft.com](https://www.newtonsoft.com/json)
+FFmpeg [ffmpeg.org](https://ffmpeg.org/), Newtonsoft.Json [newtonsoft.com](https://www.newtonsoft.com/json)
 
 # Screenshots
 ![https://i.imgur.com/m5wtdlD.png](https://i.imgur.com/m5wtdlD.png)
