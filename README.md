@@ -5,25 +5,20 @@ Video downloader for the website Anime-On-Demand.de
 AOD-Downloader is a downloader for the website [anime-on-demand.de](https://anime-on-demand.de) which allows you to download **purchased** items from the website to enjoy offline. It will require you to login and then choose your series.
 
 ## Features
-* Watch while being offline
-* Watch on a not- or badly supported multimedia device
-* Fast download
+- Watch while being offline
+- Watch on a not- or badly supported multimedia device
+- Fast download (except for the Python version)
 
 # (DE) Intro
-AOD-Downloader ist ein Downloader für die Website [anime-on-demand.de](https://anime-on-demand.de), welche es dem Benutzer erlaubt, **gekaufte** Serien offline oder auf einem Multimedia-Gerät anzusehen.
+AOD-Downloader ist ein Downloader für die Website [anime-on-demand.de](https://anime-on-demand.de), welcher es dem Benutzer erlaubt, **gekaufte** Serien offline oder auf einem Multimedia-Gerät anzusehen.
 
 ## Features
-* Serien offline ansehen
-* Serien auf einem nicht- oder nur schlacht unterstützten Gerät ansehen
-* Schneller Download
+- Serien offline ansehen
+- Serien auf einem nicht- oder nur schlecht unterstützten Gerät ansehen
+- Schneller Download (außer in der Python Version)
 
-# Dependencies
-FFmpeg [ffmpeg.org](https://ffmpeg.org/), Newtonsoft.Json [newtonsoft.com](https://www.newtonsoft.com/json)
-
-# Screenshots
-![https://i.imgur.com/m5wtdlD.png](https://i.imgur.com/m5wtdlD.png)
-![https://i.imgur.com/MU0LMsl.png](https://i.imgur.com/MU0LMsl.png)
-![https://i.imgur.com/vExJn6L.png](https://i.imgur.com/vExJn6L.png)
+## Dependencies
+- Python 3.x + requests (läuft auch auf Android mit Pydroid 3, wenn man das tkinter-Zeug durch input()-Zeug ersetzt)
 
 # LICENSE / LIZENS
 This project is released under the GNU gpl v3 license
