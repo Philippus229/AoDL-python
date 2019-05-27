@@ -18,7 +18,7 @@ AOD-Downloader ist ein Downloader für die Website [anime-on-demand.de](https://
 - Schneller Download (außer in der Python Version)
 
 ## Dependencies
-- Python 3.x + requests (läuft auch auf Android mit Pydroid 3, wenn man das tkinter-Zeug durch input()-Zeug ersetzt)
+- Python 3.x (Android: Pydroid 3) + requests
 
 # LICENSE / LIZENS
 This project is released under the GNU gpl v3 license
