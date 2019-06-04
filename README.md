@@ -13,8 +13,8 @@ AOD-Downloader is a downloader for the website [anime-on-demand.de](https://anim
 AOD-Downloader ist ein Downloader für die Website [anime-on-demand.de](https://anime-on-demand.de), welcher es dem Benutzer erlaubt, **gekaufte** Serien offline oder auf einem Multimedia-Gerät anzusehen.
 
 ## Features
-- Serien offline ansehen
-- Serien auf einem nicht- oder nur schlecht unterstützten Gerät ansehen
+- Serien und Filme offline ansehen
+- Serien und Filme auf einem nicht- oder nur schlecht unterstützten Gerät ansehen
 - Schneller Download (außer in der Python Version)
 
 ## Dependencies
