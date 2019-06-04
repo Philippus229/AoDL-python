@@ -98,6 +98,10 @@ while True:
                                              "Host": "www.anime-on-demand.de",
                                              "ContentType": "application/json"}).content)
     episodeList = episodeString.split("class=\"episodebox-title\" title=\"")
+    isFilm = False
+    if len(episodeList) == 1:
+        episodeList = episodeString.split("class=\"besides-box")
+        isFilm = True
     CSRF = episodeString.split("<meta name=\"csrf-token\" content=\"")[1].split("\"")[0]
     episodes = []
     for e in episodeList[1:]:
@@ -115,15 +119,21 @@ while True:
     while True:
         print("-1: Download starten")
         for e in range(len(episodes)):
-            print(f"{e}: {episodes[e][0]}")
+            if isFilm:
+                print(f"{e}: {episodes[e][1][0][0]}")
+            else:
+                print(f"{e}: {episodes[e][0]}")
         i = int(input(">"))
         if i == -1:
             break
         else:
-            for l in range(len(episodes[i][1])):
-            	print(f"{l}: {episodes[i][1][l][0]}")
-            i0 = int(input(">"))
-            vC.episodesToDownload.append((f"{episodes[i][0]} - {episodes[i][1][i0][0]}", episodes[i][1][i0][1]))
+            if isFilm:
+                vC.episodesToDownload.append((f"{curr[0]} - {episodes[i][1][0][0]}", episodes[i][1][0][1]))
+            else:
+                for l in range(len(episodes[i][1])):
+                	print(f"{l}: {episodes[i][1][l][0]}")
+                i0 = int(input(">"))
+                vC.episodesToDownload.append((f"{episodes[i][0]} - {episodes[i][1][i0][0]}", episodes[i][1][i0][1]))
     vC.outdir = input("Speicherort: ")
     for e in vC.episodesToDownload:
         print(f"=========={e[0]}==========")
