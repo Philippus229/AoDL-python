@@ -167,6 +167,8 @@ while True:
                                              "Host": "www.anime-on-demand.de",
                                              "ContentType": "application/json"}).content)
     episodeList = episodeString.split("class=\"episodebox-title\" title=\"")
+    if len(episodeList) == 1:
+        episodeList = episodeString.split("class=\"besides-box")
     CSRF = episodeString.split("<meta name=\"csrf-token\" content=\"")[1].split("\"")[0]
     episodes = []
     for e in episodeList[1:]:
